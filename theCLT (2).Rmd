@@ -19,7 +19,7 @@ densityplot(my1000,main="original data")
 
 ```
 
-Describe the resulting plot -  is it unimodal?  How many peaks does it have?  Are all the peaks the same size? 
+Describe the resulting plot -  is it unimodal?  How many peaks does it have?  Are all the peaks the same size?  It is not unimodal because of the multiple peaks and it has 2 peaks. The peaks are not the same size.
 
 Now take 2 random samples of 1000 points of the kkardashtemp variable and form 1000 points of their averages,
 
@@ -31,7 +31,7 @@ x.avg <- apply(mdata,1,mean)
 densityplot(x.avg,main="sample size 2")
 ```
 
-Describe the resulting plot -  is it unimodal?  How many peaks does it have?  Are all the peaks the same size? 
+Describe the resulting plot -  is it unimodal?  How many peaks does it have?  Are all the peaks the same size?   It is not unimodal because of the multiple peaks and it has 3 peaks. 2 peaks are the same size and one is bigger
 
  
 
@@ -43,7 +43,12 @@ mdata  <-matrix(Kdata,nrow=1000,ncol=numb)
 x.avg <- apply(mdata,1,mean)
 densityplot(x.avg,main="sample size 4")
 ```
+
+ It is not unimodal because of the multiple peaks and it has 3 peaks. every peak is a different size.
+ 
 Then again for 9 random samples
+
+
 ```{r}
 numb = 9
 Kdata   <- sample(KK_data, size = numb*1000, replace=T)
@@ -51,6 +56,9 @@ mdata  <-matrix(Kdata,nrow=1000,ncol=numb)
 x.avg <- apply(mdata,1,mean)
 densityplot(x.avg,main="sample size 9")
 ```
+
+ It is not unimodal because of the multiple peaks and it has 2 peaks. 2 peaks are different sizes.
+
 then 16 random samples
 ```{r}
 numb = 16
@@ -59,6 +67,9 @@ mdata  <-matrix(Kdata,nrow=1000,ncol=numb)
 x.avg <- apply(mdata,1,mean)
 densityplot(x.avg,main="sample size 16")
 ```
+
+ It is  unimodal because of the single peak and it has 1 peak. the peak is one size so yes they are all the same size
+ 
 finally for 36 random samples.
 ```{r}
 numb = 36
@@ -67,6 +78,9 @@ mdata  <-matrix(Kdata,nrow=1000,ncol=numb)
 x.avg <- apply(mdata,1,mean)
 densityplot(x.avg,main="sample size 36")
 ```
+
+ It is  unimodal because of the single peak and it has 1 peak. the peak is one size so yes they are all the same size
+
 Write a summary paragraph describing what you observed and how it relates to the central limit theorem.
 
 The middle of the graph where the peak is seems to be more heavily populated then the outsides of the graph. The population data seems to be more centralized as the sample size grew.
