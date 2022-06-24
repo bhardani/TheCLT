@@ -69,8 +69,10 @@ densityplot(x.avg,main="sample size 36")
 ```
 Write a summary paragraph describing what you observed and how it relates to the central limit theorem.
 
+The middle of the graph where the peak is seems to be more heavily populated then the outsides of the graph. The population data seems to be more centralized as the sample size grew.
+
 Be sure to comment on both the mean and standard deviation of the sample averages - the CLT makes a statement about what to expect from both.
 
- 
+the mean stays the same  because the additional data evens itself out and the standard deviation gets smaller because the increased sample size makes the results more accurate.
 
 Then submit the link to your github project  to canvas to complete this assignment.
